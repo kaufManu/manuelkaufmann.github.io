@@ -64,9 +64,8 @@
 }
 
 a {
-  color: #5c3317;
+  color: #8b1a1a;
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:focus,
@@ -129,6 +128,12 @@ h2 {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+.justified {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 span.highlight {
