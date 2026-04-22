@@ -25,7 +25,7 @@ Manuel Kaufmann
     I am a computer scientist with a background in human-centric 3D Computer Vision.
     I previously worked as a tech lead in the executive team of the <a href="https://ai.ethz.ch/">ETH AI Center</a> and as postdoc at the <a href="https://ait.ethz.ch/">AIT Lab</a> at ETH Zurich, Department of Computer Science.
     I obtained my PhD in the AIT Lab under superivsion of <a href="https://ait.ethz.ch/people/hilliges/">Prof. Otmar Hilliges</a>, co-advised by <a href="https://cgl.ethz.ch/people/grossm/">Prof. Markus Gross</a>.
-    I have completed my MSc at ETH Zurich with Prof. Hilliges as well and earned my BSc in Computer Science from the University of Basel under the supervision of <a href="https://scholar.google.com/citations?user=HKLgZpYAAAAJ&hl=de">Prof. Thomas Vetter</a>.
+    I have completed my MSc at ETH Zurich in the AIT lab and earned my BSc in Computer Science from the University of Basel under the supervision of <a href="https://scholar.google.com/citations?user=HKLgZpYAAAAJ&hl=de">Prof. Thomas Vetter</a>.
 </p>
 <p class="justified">
     I taught <a href="https://ait.ethz.ch/teaching/courses/2025-ss-machine-perception">Machine Perception</a> at ETH Zurich. All lecture materials including video recordings from 2025 are publicly available.
@@ -125,7 +125,7 @@ Personalized 3D human body fitting using point diffusion for improved accuracy i
 <!-- ODHSR -->
 <tr>
 <td style="padding:16px;width:25%;vertical-align:middle">
-<video width="160" autoplay loop muted playsinline>
+<video width="160" loop muted playsinline>
   <source src="images/odhsr.mp4" type="video/mp4">
 </video>
 </td>
@@ -185,7 +185,7 @@ An egocentric-inertial system that jointly performs human motion capture, locali
 <!-- ReLoo -->
 <tr>
 <td style="padding:16px;width:25%;vertical-align:middle">
-<video width="160" autoplay loop muted playsinline>
+<video width="160" loop muted playsinline>
   <source src="images/reloo.mp4" type="video/mp4">
 </video>
 </td>
@@ -218,7 +218,7 @@ Reconstructing humans wearing loose-fitting garments from in-the-wild monocular 
 <!-- WorldPose -->
 <tr>
 <td style="padding:16px;width:25%;vertical-align:middle">
-<video width="160" autoplay loop muted playsinline>
+<video width="160" loop muted playsinline>
   <source src="images/worldpose.mp4" type="video/mp4">
 </video>
 </td>
@@ -254,7 +254,7 @@ A large-scale dataset captured from 2022 FIFA World Cup broadcasts for benchmark
 <!-- HSR -->
 <tr>
 <td style="padding:16px;width:25%;vertical-align:middle">
-<video width="160" autoplay loop muted playsinline>
+<video width="160" loop muted playsinline>
   <source src="images/hsr.mp4" type="video/mp4">
 </video>
 </td>
@@ -289,7 +289,7 @@ A holistic approach to jointly reconstructing humans and their surrounding 3D sc
 <!-- MultiPly -->
 <tr>
 <td style="padding:16px;width:25%;vertical-align:middle">
-<video width="160" autoplay loop muted playsinline>
+<video width="160" loop muted playsinline>
   <source src="images/multiply.mp4" type="video/mp4">
 </video>
 </td>
@@ -641,5 +641,13 @@ Design inspired by <a href="https://jonbarron.info">Jon Barron</a>'s website. Th
 </td>
 </tr>
 </tbody></table>
+<script>
+  document.querySelectorAll('tr').forEach(function(row) {
+    var video = row.querySelector('video');
+    if (!video) return;
+    row.addEventListener('mouseenter', function() { video.play(); });
+    row.addEventListener('mouseleave', function() { video.pause(); video.currentTime = 0; });
+  });
+</script>
 </body>
 </html>
